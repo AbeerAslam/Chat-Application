@@ -3,8 +3,8 @@ const http = require('http');
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 const { JWT } = require('google-auth-library');
 
-const serviceAccount = require('D:\\6th Sem\\CN\\ProjectWork\\WebSocket\\a19202-d270a8720022.json');
-const projectId = 'a19202';
+const serviceAccount = require('D:\\6th Sem\\CN\\ProjectWork\\WebSocket\\your_firebase_file_id.json');
+const projectId = 'yourfirebaseprojectid';
 
 const server = http.createServer((req, res) => { });
 server.listen(3000, () => {
