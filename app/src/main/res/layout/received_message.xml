@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/receivedTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTxt"
+        android:background="@drawable/bg_received_bubble"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:text="@string/hello_this_is_a_sample_text"/>
+
+    <TextView
+        android:id="@+id/receivedTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/receivedTxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:text="12:34 PM" />
+
+</RelativeLayout>

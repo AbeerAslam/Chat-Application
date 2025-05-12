@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/nameTxt" />
+    <ImageButton
+        android:id="@+id/playBtnOverlay"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/videoView"
+        android:contentDescription="@string/play_video"
+        android:src="@drawable/baseline_play_arrow_24" />
+    <TextView
+        android:id="@+id/receivedTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playBtnOverlay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:text="12:34 PM" />
+</RelativeLayout>

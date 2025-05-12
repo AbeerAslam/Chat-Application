@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">chat_application</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_room">Enter room</string>
+    <string name="message">Message...</string>
+    <string name="send">Send</string>
+    <string name="upload">upload</string>
+    <string name="sent" />
+    <string name="hello_this_is_a_sample_message">Hello this is a sample message</string>
+    <string name="name">Name</string>
+    <string name="received">received</string>
+    <string name="name1">Name</string>
+    <string name="hello_this_is_a_sample_text">Hello this is a sample text</string>
+    <string name="User">\n\n</string>
+    <string name="GIF">\n\n</string>
+    <string name="search">Search</string>
+    <string name="play_video">Play video</string>
+</resources>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="4dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/nameTxt"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/receivedTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gifImageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:text="12:34 PM" />
+</RelativeLayout>

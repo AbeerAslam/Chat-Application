@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/sentTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gifImageView"
+        android:layout_alignEnd="@id/gifImageView"
+        android:layout_marginTop="2dp"
+        android:text="08:37 PM"
+        android:textSize="10sp"
+        android:textColor="#999999" />
+</RelativeLayout>

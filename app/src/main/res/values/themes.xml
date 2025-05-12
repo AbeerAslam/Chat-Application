@@ -1,0 +1,14 @@
+<resources>
+    <style name="Theme.Chat_application" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+    <!-- Only for Toolbar -->
+    <style name="BlackToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#000000</item>
+        <item name="titleTextColor">#FFFFFF</item>
+        <item name="subtitleTextColor">#FFFFFF</item>
+    </style>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChattingSpace">
+
+    <!-- App Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chatToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/BlackToolbar"
+        android:title="Chat Room" />
+
+
+    <!-- RecyclerView just below toolbar -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chatToolbar"
+        android:layout_above="@id/messageEdit" />
+
+    <!-- Message input -->
+    <EditText
+        android:id="@+id/messageEdit"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toStartOf="@id/sendBtn"
+        android:autofillHints="text"
+        android:background="@drawable/edittext_design"
+        android:hint="@string/message"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="16sp" />
+
+    <!-- Send button -->
+    <TextView
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:text="@string/send"
+        android:textColor="@color/colorPrimary"
+        android:visibility="invisible" />
+
+    <!-- Image/media picker -->
+    <ImageView
+        android:id="@+id/pickImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@id/messageEdit"
+        android:contentDescription="@string/upload"
+        android:padding="8dp"
+        android:src="@drawable/baseline_image_24"
+        app:tint="@color/colorPrimary" />
+
+</RelativeLayout>
